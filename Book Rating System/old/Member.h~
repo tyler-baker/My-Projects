@@ -1,0 +1,43 @@
+// Tyler Baker
+// 4.21.15
+// Members.h 1.0
+
+#ifndef MEMBERS_H
+#define MEMBERS_H
+
+#include <iostream>
+using namespace std;
+
+class Member
+{
+ public:
+  Member();
+  ~Member();
+  Member(const Member &rhs);
+  Member& operator=(const Member &rhs);
+
+  string getName(int index);
+  string getUsername(int index);
+  int getMemberCount();
+
+  int addMember(string nameIn, string usernameIn);
+  
+  bool login(string username);
+
+ private:
+  struct MemberData{
+    string name;
+    string username;
+  };
+
+  MemberData *members;
+
+  int arraySize = 20;
+  int memberCount = 0;
+  const char CANCEL = 'c';
+  const char CHANGE = 'i';
+
+};  
+ 
+
+#endif

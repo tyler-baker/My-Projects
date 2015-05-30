@@ -1,0 +1,16 @@
+// Test driver
+
+#include <iostream>
+#include "Book.h"
+using namespace std;
+
+int main()
+{
+  Book testBook(123456789,"test book", 2010, "testAuthor");
+
+  cout << testBook.getYear();
+  
+
+
+  return 0;
+}
