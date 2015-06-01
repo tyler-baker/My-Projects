@@ -1,4 +1,5 @@
 //  BST.h
+// Test
 
 #ifndef huffman_BST_h
 #define huffman_BST_h
